@@ -1,0 +1,432 @@
+<html data-dpr="1" style="font-size: 35.5143px;"><head>
+    <title>全国硕士研究生招生考试部分考生初试成绩查询系统</title>
+    <meta content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <link rel="dns-prefetch" href="https://axvert.chsi.com.cn">
+    <link rel="dns-prefetch" href="https://t1.chei.com.cn">
+    <link rel="dns-prefetch" href="https://t2.chei.com.cn">
+    <link rel="dns-prefetch" href="https://t3.chei.com.cn">
+    <link rel="dns-prefetch" href="https://t4.chei.com.cn">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="shortcut icon" type="image/x-icon" href="https://t2.chei.com.cn/yz/favicon.ico">
+    <link rel="stylesheet" href="https://t3.chei.com.cn/common/ch/iconfont.css">
+    <link rel="stylesheet" href="https://t1.chei.com.cn/yz/apply/assets2021/mobile/css/app.css?20220923">
+    <link rel="stylesheet" href="https://t1.chei.com.cn/yz/zbft/css/wap-common.css">
+    <style>
+        .entry-wsdc {
+            height: auto;
+            padding: .587rem 0.587rem .587rem 2.187rem;
+        }
+        .entry-wsdc + .entry-wsdc {
+            margin-top: .533rem;
+        }
+        .entry-szd {
+            position: relative;
+            background: none;
+        }
+        .entry-szd .szd-icon {
+            position: absolute;
+            top: 50%;
+            left: 0.496rem;
+            line-height: 1;
+            margin-top: -0.6rem;
+            font-size: 1.2rem;
+            color: #FF5757;
+        }
+        .entry-szd .hot {
+            position: absolute;
+            top: 0;
+            right: 0;
+            line-height: 1;
+            padding: 0.133rem 0.213rem;
+            background: #FF5757;
+            box-shadow: 0rem 0.03rem 0.06rem 0rem rgba(255, 83, 83, 0.31);
+            border-radius: 0.06rem;
+            text-align: center;
+            font-size: 0.24rem;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 400;
+            color: #fff;
+        }
+        .van-cell__title, .van-cell__value {
+            min-width: 0;
+        }
+        .yzwb-ksxx {
+            min-height: calc(100vh - 3.14rem);
+            padding-bottom: 0;
+        }
+    </style>
+    
+
+
+<link id="x_link_extra_css_id" rel="stylesheet" href="data:text/css,html,body,a,div,p,img,textarea{-webkit-touch-callout:text !important;-webkit-user-select:text !important;user-select:text !important;}"><style type="text/css" id="x_style_hide_element_id_0">.ads,.ads-footer,div[class*="ads"],div[class*="ad-container"],div[section*="banner"],#photo-header-title-content-text-dallor{display:none !important;}</style></head>
+<body style="font-size: 12px;">
+    <div id="appLoading" style="display: none;">
+        <div class="spin-loading">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+    </div>
+    <div id="app"><div class="yzwb-ksxx"><div class="wap-nav-bar wap-nav-bar-border"><div class="wap-nav-bar__left"><a href="/wap/"><img src="https://t1.chei.com.cn/yz/wap/assets/images/index/logo.png" alt="研招网" class="logo"></a> <!----></div> <div class="wap-nav-bar__right"><!----> <img src="https://t1.chei.com.cn/common/images/wap-icon/nav-user.svg" alt="" style="width: 0.533rem; margin-right: 0.24rem;"> <span><img src="https://t1.chei.com.cn/common/images/wap-icon/nav-menu.svg" alt="" style="width: 0.533rem; display: block;"> </span></div></div> <div class="yzwb-header">2025年部分考生初试成绩查询</div> <!----> <div class="van-cell-group van-hairline--top-bottom van-panel"><div class="van-cell van-hairline van-panel__header"><!----><!----><!----><!----></div><div class="van-panel__content"><div class="van-cell van-hairline van-field"><!----><div class="van-cell__title"><span>姓名</span><!----></div><div class="van-cell__value"><div class="van-field__body"><textarea id="resultName" rows="1" disabled="disabled" class="van-field__control" style="height: 23px;"></textarea><!----><!----><!----></div><!----></div><!----></div> <div class="van-cell van-hairline van-field"><!----><div class="van-cell__title"><span>报名号</span><!----></div><div class="van-cell__value"><div class="van-field__body"><textarea id="resultRegNumber" rows="1" disabled="disabled" class="van-field__control" style="height: 23px;"></textarea><!----><!----><!----></div><!----></div><!----></div> <div class="van-cell van-hairline van-field"><!----><div class="van-cell__title"><span>准考证号</span><!----></div><div class="van-cell__value"><div class="van-field__body"><textarea id="resultExamNumber" rows="1" disabled="disabled" class="van-field__control" style="height: 23px;"></textarea><!----><!----><!----></div><!----></div><!----></div> <div class="van-cell van-hairline van-field"><!----><div class="van-cell__title"><span>总分</span><!----></div><div class="van-cell__value"><div class="van-field__body"><textarea id="resultTotal" rows="1" disabled="disabled" class="van-field__control" style="height: 23px;"></textarea><!----><!----><!----></div><!----></div><!----></div> <div class="van-cell van-hairline van-field"><!----><div class="van-cell__title"><span>第一门</span><!----></div><div class="van-cell__value"><div class="van-field__body"><textarea id="subject1" rows="1" disabled="disabled" class="van-field__control" style="height: 23px;"></textarea><!----><!----><!----></div><!----></div><!----></div> <div class="van-cell van-hairline van-field"><!----><div class="van-cell__title"><span>第二门</span><!----></div><div class="van-cell__value"><div class="van-field__body"><textarea id="subject2" rows="1" disabled="disabled" class="van-field__control" style="height: 23px;"></textarea><!----><!----><!----></div><!----></div><!----></div> <div class="van-cell van-hairline van-field"><!----><div class="van-cell__title"><span>第三门</span><!----></div><div class="van-cell__value"><div class="van-field__body"><textarea id="subject3" rows="1" disabled="disabled" class="van-field__control" style="height: 23px;"></textarea><!----><!----><!----></div><!----></div><!----></div> <div class="van-cell van-hairline van-field"><!----><div class="van-cell__title"><span>第四门</span><!----></div><div class="van-cell__value"><div class="van-field__body"><textarea id="subject4" rows="1" disabled="disabled" class="van-field__control" style="height: 23px;"></textarea><!----><!----><!----></div><!----></div><!----></div> <div class="van-cell van-hairline van-field"><!----><div class="van-cell__title"><span>备注</span><!----></div><div class="van-cell__value"><div class="van-field__body"><textarea id="resultRemark" rows="1" disabled="disabled" class="van-field__control" style="height: 23px;"></textarea><!----><!----><!----></div><!----></div><!----></div></div><!----></div> <div class="yzwb-bg van-cell-group van-hairline--top-bottom"><div class="van-cell van-hairline"><!----><!----><div class="van-cell__value van-cell__value--alone"><div class="van-cell-text yzwb-des"><p>本系统所有数据均为招生单位提供，招生单位对查询结果负责解释。</p> <p>若查询的成绩为负值，表示有缺考、违纪等情况。若仍对查询结果有疑问，请咨询相应的招生单位。</p></div></div><!----></div> <div class="van-cell van-hairline"><!----><!----><div class="van-cell__value van-cell__value--alone"><a class="van-button van-button--primary van-button--large" href="/apply/cjcx/" target="_self"><!----><span class="van-button__text">返回</span></a></div><!----></div></div></div> <div class="wap-footer" style="padding: 0px; text-align: left;"><div class="wap-footer-units" style="line-height: 1.6; padding: 0.8rem 0.4rem 0.8rem 0.853rem;">
+        主办单位：<a href="https://chesicc.chsi.com.cn/">教育部学生服务与素质发展中心</a> <div style="margin-left: 4.5em;">（原全国高等学校学生信息咨询与就业指导中心）</div>
+        Copyright © 2003-<span>2025</span> <a href="https://www.chsi.com.cn/">学信网</a> All Rights Reserved
+    </div></div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+    <!-- 页面中额外js引入 -->
+    
+    <!-- 引入脚本 -->
+    
+    <style>
+    .van-overflow-hidden {
+        overflow: hidden !important;
+    }
+    .ch-common-nav-popup .van-popup {
+        position: fixed;
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+        max-height: 100%;
+        overflow-y: auto;
+        background-color: #fff;
+        transition: transform .3s;
+        -webkit-overflow-scrolling: touch
+    }
+    .ch-van-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7)
+    }
+    .ch-common-nav-popup .van-popup--center {
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+    .ch-common-nav-popup .close-bar {
+        position: sticky;
+        top: 0;
+        height: 1.173rem;
+        padding: 0 .427rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+    }
+    .close-bar::after{
+        position: absolute;
+        box-sizing: border-box;
+        content: " ";
+        pointer-events: none;
+        top: -50%;
+        right: -50%;
+        bottom: -50%;
+        left: -50%;
+        border-bottom: 1px solid #ECECEC;
+        transform: scale(.5);
+    }
+    .close-bar .logo {
+        display: block;
+        width: 2.87rem;
+    }
+    .ch-common-nav-popup .ch-van-overlay {
+        top: 0;
+        left: auto;
+        max-width: 750px;
+        margin: 0 auto
+    }
+    .ch-common-nav-popup .van-popup {
+        top: 0;
+        left: auto;
+    }
+    .ch-common-nav-popup .van-popup::after {
+        position: absolute;
+        box-sizing: border-box;
+        content: " ";
+        pointer-events: none;
+        top: -50%;
+        right: -50%;
+        bottom: -50%;
+        left: -50%;
+        border: 0 solid #e5e5e5;
+        transform: scale(.5);
+        border-top-width: 1px;
+        border-color: #d5d5d5;
+    }
+    .ch-common-nav-popup .van-popup--center {
+        transform: none
+    }
+    .yz-top-navlist-item {
+        font-size: 0.43rem;
+        font-weight: 700;
+        color: #13161B;
+        line-height: 0.64rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.32rem;
+    }
+    .yz-top-navlist-title {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+    .yz-top-navlist-title::before {
+        display: block;
+        content: '';
+        width: 0.08rem;
+        height: 0.4rem;
+        background: #1887E0;
+        border-radius: 0.04rem;
+        margin-right: 0.13rem;
+    }
+    .yz-top-navlist-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 0.26rem;
+    }
+    .yz-top-navlist-content a {
+        display: block;
+        width: calc( (100% - 0.58rem) / 3 );
+        text-align: center;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        border-radius: 0.11rem;
+        margin-bottom: 0.27rem;
+        margin-right: 0.29rem;
+        font-size: 0.37rem;
+        color: #13161B;
+        background: #F7F8FA;
+        text-decoration: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .yz-top-navlist-content a:active{
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    .yz-top-navlist-content a:nth-child(3n) {
+        margin-right: 0;
+    }
+    a.yz-top-navlist-link {
+        display: flex;
+        align-items: center;
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #959e9a;
+        line-height: 0.44rem;
+    }
+    a.yz-top-navlist-link:active{
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    .yz-row-list{
+        padding: 0.35rem 0.43rem;
+    }
+</style>
+
+<template id="nav-template">
+    <span @click="showNav = true;">
+        <slot>
+            <img src="https://t1.chei.com.cn/common/images/wap-icon/nav-menu.svg" style="width: .533rem;display: block" alt="">
+        </slot>
+        <div ref="yzpopup" class="ch-common-nav-popup">
+            <template v-if="showNav">
+                <div class="ch-van-overlay" @click="showNav = false;" style="z-index: 2001;"></div>
+                <div class="van-popup van-popup--center" style="z-index: 2002;">
+                    <div class="close-bar">
+                        <a href="/wap/"><img src="https://t1.chei.com.cn/yz/wap/assets/images/index/logo.png" alt="研招网" class="logo"></a>
+                        <img src="https://t1.chei.com.cn/common/images/wap-icon/nav-close.svg" @click="showNav = false;" style="width: .533rem;display: block" alt="">
+                    </div>
+                    <div class="yz-row-list">
+                        <div class="van-row" v-for="nav in navList">
+                        <div class="yz-top-navlist-item" v-if="!nav.href">
+                            <span class="yz-top-navlist-title">{{nav.name}}</span>
+                        </div>
+                        <div class="yz-top-navlist-item" v-else="">
+                            <span class="yz-top-navlist-title">{{nav.name}}</span>
+                            <a class="yz-top-navlist-link" :href="isWap ? nav.wapHref : nav.href" :target="isWap ? '' : '_blank'">
+                                <img src="https://t1.chei.com.cn/common/images/wap-icon/nav-next.svg" style="width: .4rem;display: block" alt=""></a>
+                        </div>
+                        <div class="yz-top-navlist-content" v-if="nav.child &amp;&amp; nav.child.length>0">
+                            <a v-for="item in nav.child" :href="isWap ? item.wapHref : item.href" :target="isWap ? '' : '_blank'">{{ item.name }}</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </span>
+</template>
+
+
+    <style>
+    /* 消除所有 textarea 的默认内边距和空白 */
+.van-field__control {
+    white-space: nowrap;  /* 禁止自动换行导致的空白 */
+    text-indent: 0;       /* 消除首行缩进 */
+    padding: 0 !important;/* 移除内边距 */
+}
+
+/* 针对科目字段的特殊修正 */
+#subject1, #subject2, #subject3, #subject4 {
+    margin-left: -0.05em;  /* 微调对齐 */
+}
+    .wap-nav-bar {
+        position: relative;
+        z-index: 1;
+        height: 1.173rem;
+        display: flex;
+        align-items: center;
+        background: #fff;
+    }
+    .wap-nav-bar-border:after {
+        position: absolute;
+        box-sizing: border-box;
+        content: " ";
+        pointer-events: none;
+        top: -50%;
+        right: -50%;
+        bottom: -50%;
+        left: -50%;
+        border-bottom: 1px solid #d5d5d5;
+        transform: scale(.5);
+    }
+    .wap-nav-bar .wap-nav-bar__left {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        padding: 0 0.427rem;
+    }
+    .wap-nav-bar .logo {
+        display: block;
+        width: 2.87rem;
+    }
+    .wap-nav-bar .wap-nav-bar__right {
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        padding: 0 0.427rem;
+        line-height: 1;
+    }
+    .logo-text {
+        font-size: 0.373rem;
+        color: #60656E;
+    }
+    .logo-text a {
+        color: #13161b;
+    }
+    .logo-dot {
+        display: block;
+        width: 0.027rem;
+        height: 0.533rem;
+        background: #E8EAED;
+        margin: 0 0.213rem;
+    }
+</style>
+
+<template id="nav-bar-template">
+    <div :class="['wap-nav-bar', border ? 'wap-nav-bar-border' : '']" v-if="!hidebar">
+        <div class="wap-nav-bar__left">
+            <a href="/wap/">
+                <img class="logo" src="https://t1.chei.com.cn/yz/wap/assets/images/index/logo.png" alt="研招网">
+            </a>
+            <template v-if="secondTitle">
+                <span class="logo-dot"></span>
+                <span class="logo-text" v-html="secondTitle"></span>
+            </template>
+        </div>
+        <div class="wap-nav-bar__right">
+            <template v-if="showKf">
+                <img src="https://t1.chei.com.cn/common/images/wap-icon/nav-kf.svg" style="width: .533rem;margin-right: .24rem" alt="" @click="location.assign(kfUrl)">
+            </template>
+            <template v-if="showUser">
+                <img src="https://t1.chei.com.cn/common/images/wap-icon/nav-user.svg" style="width: .533rem;margin-right: .24rem" alt="" @click="location.assign(userUrl)">
+            </template>
+            <slot></slot>
+        </div>
+    </div>
+</template>
+
+
+    <div class="ch-common-nav-popup"><!----></div>
+    
+      <script>
+        // 数据加载逻辑（结合网页7和网页9的方法）
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const uid = urlParams.get('uid');
+            const formData = JSON.parse(localStorage.getItem(uid));
+
+            if(formData) {
+                // 绑定基础数据
+                document.getElementById('resultName').textContent = formData.name;
+                document.getElementById('resultRegNumber').textContent = formData.regNumber;
+                document.getElementById('resultExamNumber').textContent = formData.examNumber;
+                document.getElementById('resultTotal').textContent = formData.totalScore;
+                document.getElementById('resultRemark').textContent = formData.remark || '无';
+            const subjectNames = [
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                // 绑定科目数据（固定科目名称）
+                
+                
+                subjectNames.forEach((name, index) => {
+                    document.getElementById(`subject${index+1}`).textContent = 
+                        `${name} ${formData.subjects[index]}`;
+                });
+            }
+        });
+    </script>    
+    
+    <script>
+window.addEventListener('DOMContentLoaded', () => {
+    // ...其他代码保持不变...
+
+    subjectNames.forEach((name, index) => {
+        const subjectElement = document.getElementById(`subject${index+1}`);
+        const score = formData.subjects[index];
+        
+        // 优化拼接逻辑（核心修复）
+        const displayText = name.trim() !== '' 
+            ? `${name} ${score}`  // 有科目名称时添加空格
+            : `${score}`;         // 无科目名称时直接显示分数
+        
+        // 消除首尾空白
+        subjectElement.textContent = displayText.trim();
+    });
+});
+</script>
+    
+    
+    
+
+
+</body><style type="text/css" id="x_style_extra_css_id">data:text/css,html,body,a,div,p,img,textarea{-webkit-touch-callout:text !important;-webkit-user-select:text !important;user-select:text !important;}</style><div style="position: fixed; z-index: 2147483647; opacity: 0.9; display: none; top: 10px; right: 10px;"></div></html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>成绩录入系统</title>
+    <style>
+        /* 样式继承自网页6的响应式设计原则 */
+        .form-container {
+            width: 600px;
+            margin: 20px auto;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .form-row {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        label {
+            width: 120px;
+            text-align: right;
+            margin-right: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        input, textarea {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .submit-btn {
+            padding: 12px 40px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-row">
+            <label>姓名：</label>
+            <input type="text" id="name" required>
+        </div>
+        
+        <div class="form-row">
+            <label>报名号：</label>
+            <input type="number" id="regNumber" required 
+                   placeholder="数字" min="100000000000" max="999999999999">
+        </div>
+
+        <div class="form-row">
+            <label>准考证号：</label>
+            <input type="number" id="examNumber" required
+                   placeholder="准考证号" min="100000000000000" max="999999999999999">
+        </div>
+
+        <div class="form-row">
+            <label>第一门：</label>
+            <input type="text" id="subject1" required>
+        </div>
+        
+        <div class="form-row">
+            <label>第二门：</label>
+            <input type="text" id="subject2" required>
+        </div>
+
+        <div class="form-row">
+            <label>第三门：</label>
+            <input type="text" id="subject3" required>
+        </div>
+
+        <div class="form-row">
+            <label>第四门：</label>
+            <input type="text" id="subject4" required>
+        </div>
+
+        <div class="form-row">
+            <label>总分：</label>
+            <input type="text" id="totalScore" required>
+        </div>
+
+        <div class="form-row">
+            <label>备注：</label>
+            <textarea id="remark" rows="3" maxlength="200"></textarea>
+        </div>
+
+        <div class="form-row" style="justify-content: center; margin-top: 30px;">
+            <button class="submit-btn" onclick="submitForm()">提交信息</button>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            // 数据验证（参考网页7的输入验证方法）
+            if(!validateForm()) return;
+
+            // 生成唯一标识符（结合网页7的时间戳方法）
+            const uid = Date.now() + '_' + Math.random().toString(36).substr(2, 5);
+
+            // 构建数据对象（采用网页9的数据存储格式）
+            const formData = {
+                name: document.getElementById('name').value,
+                regNumber: document.getElementById('regNumber').value,
+                examNumber: document.getElementById('examNumber').value,
+                subjects: [
+                    document.getElementById('subject1').value,
+                    document.getElementById('subject2').value,
+                    document.getElementById('subject3').value,
+                    document.getElementById('subject4').value
+                ],
+                totalScore: document.getElementById('totalScore').value,
+                remark: document.getElementById('remark').value
+            };
+
+            // 本地存储（网页7的localStorage方案）
+            localStorage.setItem(uid, JSON.stringify(formData));
+            
+            // 打开结果页（网页9的window.open方法）
+            window.open(`result.html?uid=${uid}`, '_blank');
+        }
+
+        function validateForm() {
+            // 实现类似网页7的验证逻辑
+            const inputs = document.querySelectorAll('input[required]');
+            for(let input of inputs) {
+                if(!input.value) {
+                    alert('请填写所有必填字段');
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
